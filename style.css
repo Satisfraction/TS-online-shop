@@ -1,0 +1,129 @@
+body {
+    background-color: lightslategray
+}
+
+hr {
+    height: 5px;
+    background-color: black;
+}
+
+h1, h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.title {
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.description {
+    border: 2px solid;
+    background-color: whitesmoke;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    border-radius: 5%;
+    background-color: rgb(98, 195, 227);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    width: auto;
+}
+
+.box img {
+    margin: auto;
+    border: 3px solid black;
+    max-width: 350px;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.box .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.box .price {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.box .quantity {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.box .quantity button {
+    background-color: lightgray;
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.box .quantity input[type="text"] {
+    width: 30px;
+    text-align: center;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 25px;
+    margin: 0px 5px;
+}
+
+.plus-button {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.minus-button {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.quantity-label {
+    font-size: 16px;
+    margin: 0px 5px;
+}
+
+.total-price-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.total-price-label {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+#total-price {
+    font-size: 24px;
+    font-weight: bold;
+}
