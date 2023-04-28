@@ -1,5 +1,5 @@
 body {
-    background-color: lightslategray
+    background-color: lightslategrey
 }
 
 hr {
@@ -13,17 +13,21 @@ h1, h2 {
 }
 
 .title {
-    font-size: 30px;
+    font-size: 28px;
     text-decoration: underline;
+
 }
 
 .description {
+    display: flexbox;
     border: 2px solid;
-    background-color: whitesmoke;
+    background-color: rgb(200, 224, 247);
     padding: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
 }
 
 .container {
@@ -50,32 +54,33 @@ h1, h2 {
     text-align: center;
     border: 1px solid black;
     padding: 10px;
-    width: auto;
+    width: 300px;
+    height: 500px;
 }
 
 .box img {
-    margin: auto;
-    border: 3px solid black;
+    margin: 5px;
+    border: 2px solid black;
     max-width: 350px;
     max-height: 250px;
     object-fit: cover;
 }
 
 .box .name {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 1px;
     text-decoration: underline;
 }
 
 .box .price {
-    font-size: 20px;
-    margin-top: 5px;
+    font-size: 18px;
+    margin: 5px;
 }
 
 .box .quantity {
-    font-size: 25px;
-    margin-top: 10px;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
 .box .quantity button {
@@ -91,29 +96,43 @@ h1, h2 {
     text-align: center;
     border: none;
     background-color: #f2f2f2;
-    font-size: 25px;
-    margin: 0px 5px;
+    font-size: 20px;
+    margin: 30px;
 }
 
 .plus-button {
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .minus-button {
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .quantity-label {
-    font-size: 16px;
+    font-size: 15px;
     margin: 0px 5px;
 }
 
-.total-price-container {
+/* der alte total-price-container */
+/* .total-price-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+} */
+
+/* der neue total-price-container */
+.total-price-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
 }
 
 .total-price-label {
@@ -121,9 +140,23 @@ h1, h2 {
     font-weight: bold;
     text-decoration: underline;
     margin-right: 10px;
+    /* 2 alternative änderungen */
+    background-color: aliceblue;
+    padding: 3px;
 }
 
 #total-price {
     font-size: 24px;
     font-weight: bold;
+    /* 3 alternative änderungen */
+    background-color: aliceblue;
+    max-width: 125px;
+    padding: 3px;
 }
+
+.bild {
+    width: 250px;
+    height: 150px;
+  }
+
+  
