@@ -160,20 +160,6 @@ h1, h2 {
     padding: 3px;
 }
 
-/* .bild {
-    width: 250px;
-    height: 150px;
-  } */
-
-
-  .cart-header{
-    display: none;
-  }
-
-  .cart-total {
-    display: none;
-  }
-
   #checkout-button {
     background-color: lightgrey;
     border: solid black;

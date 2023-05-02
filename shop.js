@@ -59,11 +59,6 @@ function updateProduct(product, idPrefix) {
 	imageEl.src = product.thumbnail;
 }
 
-// function openCartPopup() {
-//   const cartPopup = document.getElementById('cart-popup');
-//   cartPopup.classList.add('open');
-// }
-
 
 fetchProduct(1)
 	.then((product) => {
