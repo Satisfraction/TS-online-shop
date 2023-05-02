@@ -44,7 +44,7 @@ function openCartPopup() {
   `;
 
   // Öffnet Popup-Fenster
-  const popupWindow = window.open('', 'cartPopup', 'width=450,height=400');
+  const popupWindow = window.open('', 'cartPopup', 'width=500,height=400');
   popupWindow.document.write(cartContent);
 }
 
