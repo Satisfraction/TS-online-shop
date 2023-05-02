@@ -38,7 +38,7 @@ function openCartPopup() {
             </li>
           `).join('')}
         </ul>
-        <p>Total: ${total.toFixed(2)} €</p>`
+        <p>Gesamtsumme: ${total.toFixed(2)} €</p>`
       : '<p>Ihr Warenkorb ist leer.</p>'
     }
   `;
