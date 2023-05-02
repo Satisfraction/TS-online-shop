@@ -59,6 +59,11 @@ function updateProduct(product, idPrefix) {
 	imageEl.src = product.thumbnail;
 }
 
+// function openCartPopup() {
+//   const cartPopup = document.getElementById('cart-popup');
+//   cartPopup.classList.add('open');
+// }
+
 
 fetchProduct(1)
 	.then((product) => {
@@ -295,6 +300,22 @@ fetchProduct(1)
 	fetchProduct(30)
 	.then((product) => {
 	  updateProduct(product, 'product-30');
+	})
+	.catch((error) => {
+	  console.error('Fehler beim Abrufen des Produkts:', error);
+	});
+
+	fetchProduct(31)
+	.then((product) => {
+	  updateProduct(product, 'product-31');
+	})
+	.catch((error) => {
+	  console.error('Fehler beim Abrufen des Produkts:', error);
+	});
+
+	fetchProduct(32)
+	.then((product) => {
+	  updateProduct(product, 'product-32');
 	})
 	.catch((error) => {
 	  console.error('Fehler beim Abrufen des Produkts:', error);

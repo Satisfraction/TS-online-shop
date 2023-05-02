@@ -7,7 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Online-Shop Breakout</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="shop.js"></script> -->
+       <script src="cart.js" defer></script>
+
+          <!-- <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              const checkoutButton = document.getElementById('checkout-button');
+              checkoutButton.addEventListener('click', openCartPopup);
+            });
+          </script> -->
 </head>
 
 <body>
@@ -451,6 +458,32 @@
                 </div>
             </div>
 
+            <!-- box 31 -->
+            <div id="product-3" class="box">
+                <img id="product-31-image" class="bild" src="" alt="Produktbild">
+                <p id="product-31-title" class="title"></p>
+                <p id="product-31-description" class="description"></p>
+                <p id="product-31-price" class="price"></p>
+                <div class="quantity">
+                    Anzahl: <input type="text" value="0">
+                    <button class="plus-button">+</button>
+                    <button class="minus-button">-</button>
+                </div>
+            </div>
+
+            <!-- box 32 -->
+            <div id="product-32" class="box">
+                <img id="product-32-image" class="bild" src="" alt="Produktbild">
+                <p id="product-32-title" class="title"></p>
+                <p id="product-32-description" class="description"></p>
+                <p id="product-32-price" class="price"></p>
+                <div class="quantity">
+                    Anzahl: <input type="text" value="0">
+                    <button class="plus-button">+</button>
+                    <button class="minus-button">-</button>
+                </div>
+            </div>
+
         </div>
 
     </div>
@@ -461,6 +494,12 @@
             <div class="total-price-label">Gesamtpreis:</div>
             <div id="total-price">0,00 €</div>
         </div>
+
+        <div id="cart-popup">
+            </div>
+            <button id="checkout-button">Zur Kasse gehen</button>
+          </div>
+          
     </div>
 
     <hr>

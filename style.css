@@ -60,17 +60,19 @@ h1, h2 {
 .box img {
     margin: 5px;
     border: 2px solid black;
+    min-width: 250px;
+    min-height: 180px;
     max-width: 350px;
     max-height: 250px;
     object-fit: cover;
 }
 
-.box .name {
+/* .box .name {
     font-size: 16px;
     font-weight: bold;
     margin-top: 1px;
     text-decoration: underline;
-}
+} */
 
 .box .price {
     font-size: 18px;
@@ -104,6 +106,11 @@ h1, h2 {
 }
 
 .minus-button {
+    border-radius: 5px 5px 5px 5px;
+}
+
+.checkout-button {
+    font-size: 18px;
     border-radius: 5px 5px 5px 5px;
 }
 
@@ -153,9 +160,22 @@ h1, h2 {
     padding: 3px;
 }
 
-.bild {
+/* .bild {
     width: 250px;
     height: 150px;
+  } */
+
+
+  .cart-header{
+    display: none;
   }
 
-  
+  .cart-total {
+    display: none;
+  }
+
+  #checkout-button {
+    background-color: lightgrey;
+    border: solid black;
+    font-size: 25px;
+  }
