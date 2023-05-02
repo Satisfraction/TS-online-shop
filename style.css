@@ -20,8 +20,7 @@ h1, h2 {
 
 .description {
     display: flexbox;
-    border: 2px solid;
-    background-color: rgb(200, 224, 247);
+    background-color: rgb(98, 195, 227);
     padding: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
